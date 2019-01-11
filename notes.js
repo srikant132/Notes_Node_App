@@ -9,24 +9,3 @@ console.log('Starting notes.js');       //here we try to export the content of t
    return 'New not';
 
  };
-
-
-//Add function Defined and call in to app.js
-module.exports.add = (a,b) =>{
-return a+b;
-}
-
-//Substract function
-module.exports.sub = (a,b) =>{
-return a-b;
-}
-
-//multiplication function
-module.exports.mul = (a,b) =>{
-return a*b;
-}
-
-//Substract function
-module.exports.div = (a,b) =>{
-return a/b;
-}
