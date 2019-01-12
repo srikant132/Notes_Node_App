@@ -1,4 +1,3 @@
-
 console.log('Starting app.js');
 
 const fs    = require('fs');
@@ -15,13 +14,13 @@ console.log('yargs',argv);
 
 
 if(command === 'add'){
-  console.log('Adding new note');
+  notes.addNote(argv.title,argv.body);
 }else if(command === 'list'){
-  console.log('Listing all notes');
+  notes.getAll();                              //getAll function have no arguments it will show all notes
 }else if(command === 'read'){
-  console.log('Reading notes');
+  notes.getNote(argv.title);
 }else if(command === 'remove'){
-  console.log('Removing notes');
+  notes.removeNote(argv.title)
 }else{
   console.log('Command not recognized');
 }
